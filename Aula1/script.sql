@@ -1,22 +1,22 @@
-create table tb_contatos(
+create table tb_contacts(
   id serial primary key,
-  nome varchar(50),
+  name varchar(50),
   email varchar(100),
-  celular varchar(15)
+  phone varchar(15)
 );
 
-insert into tb_contatos(nome, email, celular)
+insert into tb_contacts(name, email, phone)
 values('Jose','jose@gmail.com','(47)9087-0987');
 
-insert into tb_contatos(nome, email, celular)
+insert into tb_contacts(name, email, phone)
 values('Maria','maria@gmail.com','(47)9087-0945');
 
-create table tb_usuarios(
+create table tb_users(
   id serial primary key,
-  nome varchar(50),
+  name varchar(50),
   email varchar(100),
-  senha varchar(300),
-  perfil varchar(10)
+  password varchar(300),
+  profile varchar(10)
 );
 
 create table tb_compromissos(
